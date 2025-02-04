@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Spotify</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="loginForm">
+            <h1>Entrar</h1>
+            <div class="input-group">
+                <label for="email">Email ou nome de usuário </label>
+                <input type="text" id="email" placeholder="digite seu email ou nome de usuario" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password"  placeholder="digite sua Senha">
+            </div>
+            <button type="submit">Entrar</button>
+            <p class="message" id="message"></p>
+        </form>
+    </div>
+    <section id="section">
+        <h1 id="texto">ATENCÃO </h1>
+        <p>o login precisa cconter apenas 5 digitos
+             com apenas numeros impares .  
+             A senha precisa ser de apenas 4 
+             digitos com numeros pares. </p>
+
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
