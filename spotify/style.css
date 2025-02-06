@@ -18,7 +18,7 @@ body {
     background-color: #1db954;
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 20px rgba(73, 66, 66, 0.2);
     width: 300px;
 }
 
@@ -69,13 +69,14 @@ section {
     border: 100px ;
     border-radius:8px;
     background-color: #1db954;
-    padding: 45px;
+    padding: 40px;
+    box-shadow: 0 4px 15px #413d3d;
 }
 
 
 
 @media (max-width: 768px) {/* para telas igualm ou menor a 768px */
     #seção {
-        width: 100%;
+        width: 70%;
     }
 }
