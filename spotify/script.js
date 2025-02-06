@@ -1,16 +1,15 @@
-document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio do formulário
+function verificar() {
+    let login = document.getElementById('login').value;
+    let password = document.getElementById('password').value;
 
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    const message = document.getElementById('message');
+    let loginValido = /^[13579]{5}$/.test(login); // apenas numeros impares,exatos //
+    let senhaValida = /^[02468]{4}$/.test(password); // apenas numeros pares,exatos //
 
-    // Simulação de validação
-    if (email === "usuario@exemplo.com" && password === "40028922") {
-        message.textContent = "Login bem-sucedido!";
-        message.style.color = "green";
+    if (loginValido && senhaValida) {
+        alert('login e senha validos!');
     } else {
-        message.textContent = "Email ou senha incorretos.";
-        message.style.color = "red";
+        alert('login e senha invalidos!\n\nlembre-se:\n- o login deve conter apenas numeros impares');
+
     }
-});
+
+}
